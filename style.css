@@ -1,0 +1,205 @@
+:root {
+  --mn-col-1: red;
+  --mn-col-2: blueviolet;
+  --mn-col-3: #eeeded;
+  --mn-col-4: #c4fdc4;
+  --mn-col-5: #fad88e;
+  --mn-col-6: #d79a64;
+  --mn-col-7: #363d72;
+  --mn-col-8: #e5d6d0;
+  --mn-col-9: #030c34;
+  --mn-col-10: #fff8e5;
+  --mn-col-11: #fa8117;
+  --heading-font: "Averia Serif Libre", cursive;
+  --heading-alt-font: "Yeseva One", cursive;
+  --body-font: "Rubik", sans-serif;
+  --body-alt-font: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 50px;
+  font-family: var(--body-font);
+  font-size: 20px;
+}
+
+.edge {
+  border-radius: 12px;
+}
+
+.main-page {
+  color: var(--mn-col-9);
+  border: 10px inset var(--mn-col-11);
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/502/original/cooking-utensils.jpg?1697286678");
+  background-size: contain;
+  background-position: center;
+  background-repeat: space repeat;
+}
+
+h1,
+h3,
+h4 {
+  font-family: var(--heading-font);
+}
+
+h1 {
+  color: var(--mn-col-10);
+  margin-top: 120px;
+}
+
+h3 {
+  background: var(--mn-col-6);
+  margin-top: 15px;
+}
+.favorite,
+.nutrition-fact {
+  font-size: 22px;
+  border: 8px outset var(--mn-col-11);
+  padding: 10px;
+  margin: 80px;
+  border-radius: 7px;
+  color: var(--mn-col-9);
+  background: linear-gradient(
+    var(--mn-col-3),
+    var(--mn-col-8),
+    var(--mn-col-10)
+  );
+}
+
+.box-image-tripe {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/507/original/main-recipe.jfif?1697287008");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  border-radius: 60% 50% 50% 60%;
+  border: 10px solid var(--mn-col-10);
+  box-shadow: 0 0 3px 2px;
+}
+
+.tripe-nutrition-link {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  background: var(--mn-col-9);
+  color: var(--mn-col-10);
+  font-size: 24px;
+}
+
+.sub-page {
+  border-radius: 7px;
+}
+
+.sub-page-pic {
+  border-radius: 25px;
+  border: 10px solid var(--mn-col-10);
+  box-shadow: 0 0 3px 2px;
+}
+.main-recipe {
+  border: 2px solid var(--mn-col-6);
+  background: var(--mn-col-10);
+  list-style: none;
+  color: var(--mn-col-11);
+  border-radius: 7px;
+}
+.method {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.recipe-link {
+  font-size: 16px;
+  border: 2px solid var(--mn-col-5);
+  background: #fa8117;
+  display: block;
+  margin: 20px auto;
+  font-size: 24px;
+  color: var(--mn-col-10);
+  width: 160px;
+}
+
+.contact-box {
+  border: 4px ridge var(--mn-col-5);
+  border-radius: 4px;
+  background: linear-gradient(to left, var(--mn-col-7), var(--mn-col-5));
+  color: var(--mn-col-10);
+  margin-top: 40px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.button {
+  background: var(--mn-col-11);
+  border-radius: 40px;
+  border: 4px double var(--mn-col-6);
+  padding: 12px;
+  margin: 40px;
+  text-decoration: none;
+  color: var(--mn-col-7);
+  width: 210px;
+}
+.footer {
+  background: var(--mn-col-10);
+  color: var(--mn-col-11);
+  font-size: 12px;
+}
+.footer-link {
+  text-decoration: none;
+  color: var(--mn-col-7);
+}
+.method-link,
+.wonderbag-link {
+  text-decoration: none;
+  color: var(--mn-col-11);
+}
+#circles {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 10px -10px 3px -5px white, 15px 0 3px -2px black,
+    30px -10px 3px -6px red, 40px 0 3px -8px yellow, 50px -10px 3px -10px green;
+}
+
+@media (max-width: 600px) {
+  .container,
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .favorite,
+  .nutrition-fact {
+    font-size: 18px;
+  }
+  .favorite,
+  .nutrition-fact,
+  .button {
+    margin: 0;
+    padding: 0;
+  }
+  .recipe-link,
+  .tripe-nutrition-link {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .sub-page {
+    width: 250px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  .main-recipe {
+    padding: 0;
+  }
+  .footer {
+    margin: 0 auto;
+    padding: 0;
+
+    display: block;
+  }
+  #circles {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,400;1,700&family=Cormorant+Upright:wght@400;700&family=Playfair+Display:ital,wght@0,900;1,800&family=Poppins:wght@400;700;800&family=Rubik:wght@300;400&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+<style>
+     :root {
+  --mn-col-1: red;
+  --mn-col-2: blueviolet;
+  --mn-col-3: #eeeded;
+  --mn-col-4: #c4fdc4;
+  --mn-col-5: #fad88e;
+  --mn-col-6: #d79a64;
+  --mn-col-7: #363d72;
+  --mn-col-8: #e5d6d0;
+  --mn-col-9: #030c34;
+  --mn-col-10: #fff8e5;
+  --mn-col-11: #fa8117;
+  --heading-font: "Averia Serif Libre", cursive;
+  --heading-alt-font: "Yeseva One", cursive;
+  --body-font: "Rubik", sans-serif;
+  --body-alt-font: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 50px;
+  font-family: var(--body-font);
+  font-size: 20px;
+}
+
+.edge {
+  border-radius: 12px;
+}
+.main-page {
+  color: var(--mn-col-9);
+  border: 10px inset var(--mn-col-11);
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/502/original/cooking-utensils.jpg?1697286678");
+  background-size: contain;
+  background-position: center;
+  background-repeat: space repeat;
+}
+
+h1,
+h3,
+h4 {
+  font-family: var(--heading-font);
+}
+
+h1 {
+  color: var(--mn-col-10);
+  margin-top: 120px;
+}
+
+h3 {
+  background: var(--mn-col-6);
+  margin-top: 15px;
+}
+.favorite,
+.nutrition-fact {
+  font-size: 22px;
+  border: 8px outset var(--mn-col-11);
+  padding: 10px;
+  margin: 80px;
+  border-radius: 7px;
+  color: var(--mn-col-9);
+  background: linear-gradient(
+    var(--mn-col-3),
+    var(--mn-col-8),
+    var(--mn-col-10)
+  );
+}
+
+.box-image-tripe {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/507/original/main-recipe.jfif?1697287008");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  border-radius: 60% 50% 50% 60%;
+  border: 10px solid var(--mn-col-10);
+  box-shadow: 0 0 3px 2px;
+}
+
+.tripe-nutrition-link {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  background: var(--mn-col-5);
+  color: var(--mn-col-10);
+  font-size: 24px;
+}
+
+.sub-page {
+  border-radius: 7px;
+}
+
+.sub-page-pic {
+  border-radius: 25px;
+  border: 10px solid var(--mn-col-10);
+  box-shadow: 0 0 3px 2px;
+}
+.main-recipe {
+  border: 2px solid var(--mn-col-6);
+  background: var(--mn-col-10);
+  list-style: none;
+  color: var(--mn-col-11);
+  border-radius: 7px;
+}
+.method {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.recipe-link {
+    border: 2px solid var(--mn-col-5);
+  background: #fa8117;
+      margin: 20px;
+  font-size: 24px;
+    width: 160px;
+}
+
+.contact-box {
+  border: 4px ridge var(--mn-col-5);
+  border-radius: 4px;
+  background: linear-gradient(to left, var(--mn-col-7), var(--mn-col-5));
+  color: var(--mn-col-10);
+  margin-top: 40px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.button {
+  background: var(--mn-col-11);
+  border-radius: 40px;
+  border: 4px double var(--mn-col-6);
+  padding: 12px;
+  margin-top: 40px;
+  text-decoration: none;
+  color: var(--mn-col-7);
+  width: 210px;
+}
+
+
+
+.footer {
+  background: var(--mn-col-10);
+  color: var(--mn-col-11);
+  font-size: 12px;
+}
+.footer-link {
+  text-decoration: none;
+  color: var(--mn-col-7);
+}
+.method-link,
+.wonderbag-link {
+  text-decoration: none;
+  color: var(--mn-col-11);
+}
+#circles {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 10px -10px 3px -5px white, 15px 0 3px -2px black,
+    30px -10px 3px -6px red, 40px 0 3px -8px yellow, 50px -10px 3px -10px green;
+}
+
+@media (max-width: 900px) {
+  .container,
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+  
+
+  .favorite,
+  .nutrition-fact {
+    font-size: 18px;
+  }
+  .favorite,
+  .nutrition-fact,
+  .button {
+    margin: 0;
+    padding: 0;
+  }
+  .recipe-link,
+  .tripe-nutrition-link {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .sub-page {
+    width: 250px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  .main-recipe {
+    padding: 0;
+  }
+  .footer {
+    margin: 0 auto;
+    padding: 0;
+
+    display: block;
+  }
+  #circles {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+    </style>
+    <title>My Favourite Zimbabwean Traditional Meal</title>
+
+  </head>
+  <body>
+    <div class="container">
+       <nav class="navbar navbar-expand-lg" style="color: var(--mn-col-7);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          >Fav Zimbo Meal</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end show" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a
+              class="nav-link btn"
+              aria-current="page"
+              href="index.html"
+                            >Home</a
+            >
+            <a
+              class="nav-link btn"
+              href="#tripe"
+                            >Tripe</a
+            >
+            <a
+              class="nav-link btn"
+              href="#tradition"
+                          >Tradition</a
+            ><a
+              class="nav-link btn"
+              aria-current="page"
+              href="#nutrition"
+                            >Nutrition</a
+            >
+            <a
+              class="nav-link btn"
+              href="#fav-recipe"
+                            >Fav-Recipe</a
+            >
+            <a
+              class="nav-link btn"
+              href="#zim-recipe-video"
+                          >Bonus-Recipe</a
+            >
+            <a
+              class="nav-link btn"
+              href="#contact-me"
+                          >Contact Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+      <div class="main-body">
+        <div class="main-background-image"></div>
+        <div class="row edge">
+        
+      
+        <div class="col-8 main-page pt-5 shadow-lg">
+          <h1 class="text-center">My Favourite Zimbo Traditional Meal</h1>
+         
+
+          <div class="row">
+            <div class="col-sm main-body">
+              
+
+              <div class="favorite shadow">
+                <div>
+                  <div class="box-image-tripe"></div>
+              <h3 class="text-center" id="tripe">I love beef tripe</h3></div>
+                <p>I love eating wholesome food packed with nutritional value. My favourite is beef tripe stew, served with sadza and green vegetables. I love this meal as it is flavourful, simple to cook and saves on time.
+                </p>
+                 Many times I am pressed for time, so I always look for simple, time-saving  and easy to prepare meal recipes. 
+                <p>
+                 
+                I often use
+                a
+                <a
+                  href="https://www.wonderbagworld.com/"
+                  alt="Wonderbag" class="wonderbag-link"
+                  target="_blank"
+                  >wonderbag</a
+                >
+                , a slow non-electric insulated bag to complete the cooking. I put my meat
+                 pot pre-boiled for 5minutes early in the morning before setting out for work.
+                  When I get back home in the evening, my meat will be ready to <a href="#method" target="_blank" class="method-link">season</a>.
+            </p>
+                <p>
+                Above all tripe is a complete source of protein, meaning it
+                contains all nine essential amino acids my body needs to
+                function properly. What's more, it's an affordable food that supports
+                sustainable food practices.
+                </p>
+                </div>
+
+                <div class="nutrition-fact shadow mt-5 mb-5" id="food-value">
+              <h3 class="text-center" id="tradition" >Tradition</h3>
+              <p>
+                Beef offals are a concentrated source of nutrients and are
+                included in traditional cuisines of many cultures around the
+                world, including Zimbabwe. They are also considered a treat, whenever they are served. Through generations, the preparation
+                of maguru/ulusu/beef tripe has been passed down, keeping the
+                tradition and delicacy alive.
+              </p>
+              
+              <br />
+              <h3 class="text-center"id="nutrition" >Nutrition</h3>
+              <p>
+                Tripe is is an excellent source of highly absorbable protein and
+                contains an impressive amount of vitamins and minerals
+                (nutrients that are lacking in many people's diets) like:
+                vitamin B12, selenium, zinc, calcium, iron, manganese and
+                niacin(vitamin B3).
+              </p>
+               <a
+                href="https://www.webmd.com/diet/tripe-good-for-you"
+                alt="webmd"
+                target="_blank"
+                class="btn  rounded-pill shadow tripe-nutrition-link   mb-4"
+                ><strong>Read on</strong></a
+              >
+              </div>
+                
+              
+             
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="col-sm-4 sub-page border-end border-5">
+                    <div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/512/original/modern-kitchen.jpg?1697287863"
+              alt="modern-kitchen"
+              class="img-fluid sub-page-pic mt-4 mb-3"
+              style="width: 350px; height: 350px"
+            />
+          </div>
+          
+            <ul class="main-recipe shadow">
+              <li class="box">
+                
+                  <div class="box-title" id="fav-recipe"><h4>My Favourite Tripe Recipe</h4>
+                                      </div>
+<p class="box-text" id="ingredients"> Ingredients: 
+  <ul><li>2 kg beef tripe</li> <li>1 large onion finely chopped</li>
+              <li>1 red bell pepper</li> <li>1
+            green pepper </li><li>6 large tomatoes finely chopped</li>
+            <li>1kg covo/kale chopped</li>
+            <li>salt and pepper to
+            taste</li>  </ul>
+</p>
+                <p class="box-text" id="method">
+Method:</p><p class="box-text method">1. Wash tripe/guru/lusu thouroughly to remove all dirt
+            and sandy particles. <br />2. Put tripe in a pot and add, onions, bell pepper and
+            tomatoes. Cover the tripe with water , and bring to boil.
+             <br />3. Boil for 5minutes, and transfer pot to the wonderbag. Leave for at least 8 hours.
+             <br />4.  Remove pot from the wonderbag. Add salt and pepper to the meat, and boil for 15 minutes until the tripe/guru/lusu is soft, and the soup has a thick
+            consistency.
+            <br />5. Add covo/kale mix well and cook until the covo is tender. Relish is ready to serve
+          </p>
+              </li></ul>
+                
+
+
+          <p class="text-center bonus-recipe" id="zim-recipe-video">Bonus Recipe</p>
+          <div><a
+            href="https://youtu.be/NJb_VU6rKD0?si=UHuv9RbheqCQSUjw"
+            alt="maguru stew recipe"
+            target="_blank"
+            class="btn rounded-circle recipe-link d-flex justify-content-center" ><strong>Watch Video</strong></a
+          ></div>
+          
+          <div>
+          <div class="contact-box">
+            <div class="box-image-contact contact-me"></div>
+            <p class="box text-center" id="contact-me">
+              For more on Zimbo traditional recipes </p>
+              <a type="button" href="mailto:falitsoe@gmail.com" class="button"><strong>Contact me</strong></a>
+            
+          </div></div>
+        </div>
+        <div class="footer pt-4">
+        <footer>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/501/original/afro-woman.png?1697286550"
+              alt="Woman coder"
+              class="img-fluid me-5 circles" id="circles"
+            
+            
+            />
+            
+              Coded with HTML and CSS by
+              <a href="https://github.com/DBusie" alt="Github Repo" target="_blank" class="footer-link">Busi Shumba</a> for the <a href="https://www.shecodes.io/" class="footer-link" alt="Shecodes-link" target="_blank">SheCodes</a> Food Challenge
+            
+          </footer>
+      </div>
+      </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
